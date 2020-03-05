@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>hello Word !!!!!!!!</h1>
+    <div class="containt-fluid">
+            <h1 class="title">Cookie-cliker</h1>
+        <div class="link">
+            <a href="#" class="link-items">mon github</a>
+            <a href="#" class="link-items">Mon linkedin</a>
+            <a href="#" class="link-items">À propos de moi</a>
+        </div>    
+    </div>
+    <div class="containt">
+        <div class="score" id="affichage">
+            0
+        </div>
+        <div class="play">
+            <button id="cookie" class="play-btn" onclick= cliquer() ></button>
+        </div>
+        <div class="bonus">
+            <div>
+                <button id="multi"  class="btn" onclick=incrementer()>multiplie*2 prix:50</button>
+            </div>
+            <div>
+                <button id="auto" class="btn" onclick=seul()>autoclick prix: 200</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>    
 </body>
 </html>
